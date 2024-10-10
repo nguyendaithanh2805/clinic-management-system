@@ -9,11 +9,11 @@ public partial class TblMedicalRecord
 
     public int PatientId { get; set; }
 
-    public string Diagnoses { get; set; } = null!;
+    public string Diagnoses { get; set; }
 
-    public string Treatments { get; set; } = null!;
+    public string Treatments { get; set; }
 
-    public virtual TblPatient Patient { get; set; } = null!;
+    public virtual TblPatient Patient { get; set; }
 
     public virtual ICollection<TblPrescription> TblPrescriptions { get; set; } = new List<TblPrescription>();
 }

@@ -9,9 +9,9 @@ public partial class TblClinicRoom
 
     public int StaffId { get; set; }
 
-    public string Type { get; set; } = null!;
+    public string Type { get; set; }
 
     public int Capacity { get; set; }
 
-    public virtual TblStaff Staff { get; set; } = null!;
+    public virtual TblStaff Staff { get; set; }
 }

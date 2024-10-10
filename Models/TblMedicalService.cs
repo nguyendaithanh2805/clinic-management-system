@@ -7,7 +7,7 @@ public partial class TblMedicalService
 {
     public int MedicalServiceId { get; set; }
 
-    public string Name { get; set; } = null!;
+    public string Name { get; set; }
 
     public decimal Cost { get; set; }
 

@@ -11,7 +11,7 @@ public partial class TblPrescriptionMedicine
 
     public int Quantity { get; set; }
 
-    public virtual TblMedicine Medicine { get; set; } = null!;
+    public virtual TblMedicine Medicine { get; set; }
 
-    public virtual TblPrescription Prescription { get; set; } = null!;
+    public virtual TblPrescription Prescription { get; set; }
 }

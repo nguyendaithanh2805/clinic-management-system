@@ -17,9 +17,9 @@ public partial class TblAppointment
 
     public DateTime AppointmentDate { get; set; }
 
-    public virtual TblDoctor Doctor { get; set; } = null!;
+    public virtual TblDoctor Doctor { get; set; }
 
-    public virtual TblMedicalService MedicalService { get; set; } = null!;
+    public virtual TblMedicalService MedicalService { get; set; }
 
-    public virtual TblPatient Patient { get; set; } = null!;
+    public virtual TblPatient Patient { get; set; }
 }

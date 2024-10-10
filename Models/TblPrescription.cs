@@ -9,9 +9,9 @@ public partial class TblPrescription
 
     public int MedicalRecordId { get; set; }
 
-    public string Dosage { get; set; } = null!;
+    public string Dosage { get; set; }
 
-    public virtual TblMedicalRecord MedicalRecord { get; set; } = null!;
+    public virtual TblMedicalRecord MedicalRecord { get; set; }
 
     public virtual ICollection<TblPrescriptionMedicine> TblPrescriptionMedicines { get; set; } = new List<TblPrescriptionMedicine>();
 }

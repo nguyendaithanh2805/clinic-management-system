@@ -15,7 +15,7 @@ public partial class TblDoctor
 
     public string? Email { get; set; }
 
-    public virtual TblUser Doctor { get; set; } = null!;
+    public virtual TblUser Doctor { get; set; }
 
     public virtual ICollection<TblAppointment> TblAppointments { get; set; } = new List<TblAppointment>();
 }
