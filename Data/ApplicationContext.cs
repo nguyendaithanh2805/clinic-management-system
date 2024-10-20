@@ -40,9 +40,6 @@ public partial class ApplicationContext : DbContext
 
     public virtual DbSet<TblUser> TblUsers { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Name=DbConnection");
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<TblAppointment>(entity =>

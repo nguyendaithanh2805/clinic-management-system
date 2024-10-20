@@ -5,7 +5,7 @@
         Task<IEnumerable<TDto>> FetchAllAsync();
         Task<TDto> FetchByIdAsync(object id);
         Task AddAsync(TDto dto);
-        Task UpdateAsync(TDto dto);
+        Task UpdateAsync(object id, TDto dto);
         Task DeleteAsync(object id);
     }
 }

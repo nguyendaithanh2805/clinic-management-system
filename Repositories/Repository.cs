@@ -9,10 +9,10 @@ namespace clinic_management_system.Repositories
         private readonly ApplicationContext _context;
         private readonly DbSet<T> _dbSet;
 
-        public Repository(ApplicationContext context, DbSet<T> dbSet)
+        public Repository(ApplicationContext context)
         {
             _context = context;
-            _dbSet = dbSet;
+            _dbSet = _context.Set<T>();
         }
 
         public async Task AddAsync(T entity)
